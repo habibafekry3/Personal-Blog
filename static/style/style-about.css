@@ -1,0 +1,171 @@
+body{
+    font-family: "Oxanium", sans-serif !important;
+    font-optical-sizing: auto;
+    color: rgb(255, 255, 255) !important;
+    background-color: #0e0117;
+}
+
+/* =========LAYOUT========= */
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "header "
+    "main"
+    "footer";
+    gap: 0.8em;  
+}
+
+/* ==========MAIN========== */      
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2em;
+    margin: 3em 4em 0 4em;
+}
+
+/* ==========ABOUT========== */
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 2em;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+b{
+    color: #bedaf8;
+}
+
+h2{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 30px;
+}
+
+h2::before{
+    content: "";
+    position: absolute;
+    left: 2em;
+    width: 8px;
+    height: 40px;
+    background: linear-gradient(135deg, #8f4343, #418cd7);
+    border-radius: 10px;
+}
+
+.about-me p{
+    padding-left: 2em;
+}
+
+.quote q{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 600;
+}
+
+.social-icons a{
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(135deg, #8f4343, #418cd7);
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photo img{
+    box-shadow: -15px -12px 19px -5px rgba(60, 51, 136, 0.544);
+    border-radius: 150px 0;
+    width: 50%;
+    height: 50%;
+} 
+
+/* =========CONTACT=========== */
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title h3{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 20px;
+    margin: -0.5em 0 2em 0;
+    padding-left: 2em;
+}
+
+.form-contact{
+    background: linear-gradient(135deg, #8f4343, #418cd7);
+    border-radius: 0 100px;
+    margin: 0 5em;
+    padding: 2em;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto;
+   
+}
+.input-group label{
+    font-family: "Bruno Ace SC", sans-serif; ;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #cccccc;
+    font-size: 14px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.button button{
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #5168bd, #8f4343);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Bruno Ace SC", sans-serif;
+}
+
+/* ==========FOOTER=========*/
+
+footer{
+    grid-area: footer;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px 0px 19px -5px rgba(245, 239, 239, 0.2);
+}
+
+.ft p{
+    font-size: 12px;
+}
+
+.developer{
+    color: #bedaf8;
+    font-weight: 800;
+}

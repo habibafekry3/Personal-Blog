@@ -1,0 +1,200 @@
+body{
+    font-family: "Oxanium", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: rgb(255, 255, 255) !important;
+    background-color: #0e0117;
+}
+
+/* =========LAYOUT========= */
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-gap: 0.8em; 
+}
+
+/* ==========MAIN========== */
+
+main{
+    grid-area: main;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+/* ========HOME======== */
+
+.home{
+    background-image: url(../image/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.welcome h1{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 50px;
+}
+
+.w-text p{
+    text-align: center;
+}
+
+#discover{
+    font-size: 25px;
+    font-family: "Bruno Ace SC", sans-serif;
+} 
+
+/* =========BLOGS========= */
+
+.blogs{
+    background: linear-gradient(90deg, #263155, #2d170c);
+    border-radius: 200px 0;
+}
+
+h2{
+    text-align: center;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 30px;
+}
+
+h2::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(135deg, #100601, #c7703a);
+    border-radius: 10px;
+}
+
+.text{
+    margin-top: -1em;
+}
+
+/* ========SOLAR_SYSTEM======== */
+
+h3{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 25px;
+    padding: 0 3rem;
+}
+
+h3::before{
+    content: "";
+    position: absolute;
+    left:2.5rem;
+    width: 8px;
+    height: 30px;
+    background: linear-gradient(135deg, #100601, #c7703a);
+    border-radius: 10px;
+}
+
+.solar-system,
+.plants{
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px -8px 12px -10px rgb(217, 209, 193, 0.5);
+    border-radius: 50px 0;
+    padding: 1em;
+}
+
+.card-photo{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.card-photo img{
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5em;
+}
+
+.card-photo img:hover{
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(120%);
+}
+
+.card-photo figcaption{
+    font-size: 25px;
+    font-family: "Bruno Ace SC", sans-serif;
+}
+
+u{
+    font-size: 1.2em;
+    font-family: "Bruno Ace SC", sans-serif;
+    background: linear-gradient(135deg, #612d13, #141e41);
+}
+
+.card p{
+   padding-left: 2em;
+}
+
+.card a{
+    text-decoration: none;
+    margin: auto;
+}
+
+.card a button{
+    border: none;
+    padding: 8px 20px;
+    max-width: 20em;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(135deg, #82472a, #263155);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* =========PLANTS======== */
+
+b{
+    color: #b6653c;
+}
+
+.title-p1{
+    font-family: "Bruno Ace SC", sans-serif;
+    background-image: url(../image/space-farming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 50px;
+    padding: 3em;
+    opacity: 90%;
+    font-size: 30px;
+}
+
+.title-p2{
+    font-family: "Bruno Ace SC", sans-serif;
+    background-image: url(../image/farming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 50px ;
+    padding: 3em;
+    opacity: 90%;
+    font-size: 30px;
+}

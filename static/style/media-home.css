@@ -1,0 +1,172 @@
+@media (max-width: 320px){
+    body{
+        font-size: 10px !important;
+        font-weight: 400;
+    }
+    .home{
+        height: 30vh;
+        padding: 2.5em;
+    }
+
+    .welcome h1{
+        font-size: 2em;
+    }
+
+    #discover{
+        font-size: 1.3em;
+    }
+
+    .blogs h2{
+        font-size: 1.5em;
+    }
+
+    h2::before{
+        width: 25px;
+        height: 3.5px;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+    h3::before{
+        height: 15px;
+ 
+    }
+
+    .card{
+        padding: 0;
+    }
+    .card-photo img{
+        width: 30px;
+        height: 30px;
+        margin-right: 0.15em;
+    }
+
+    .card figcaption{
+        font-size: 0.6em;
+    }
+
+    u{
+        font-size: 1em;
+    }
+    .solar-system,
+    .plants{
+        grid-template-columns: 1fr;
+    }
+
+    .title-p1,
+    .title-p2{
+        font-size: 1em;
+    }
+
+    .card a button{
+        padding: 8px; 
+        font-size: 1em;
+    }
+}
+
+/* ==========PHONE========== */
+
+@media (min-width:321px) and (max-width:700px) {
+    body{
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+    .home{
+        height: 50vh;
+        padding: 3em;
+    }
+
+    .welcome h1{
+        font-size: 2.5em;
+    }
+
+    #discover{
+        font-size: 1.5em;
+    }
+
+    .blogs h2{
+        font-size: 1.7em;
+    }
+
+    h2::before{
+        width: 30;
+        height: 4px;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+    h3::before{
+        height: 25px;
+    }
+
+    .card{
+        padding: 0.3em;
+    }
+
+    .card-photo img{
+        width: 80px;
+        height: 80px;
+        margin-right: 0.2em;
+    }
+
+    .card figcaption{
+        font-size: 1em;
+    }
+
+    u{
+        font-size: 1em;
+    }
+
+    .solar-system,
+    .plants{
+        grid-template-columns: 1fr;
+    }
+
+    .title-p1,
+    .title-p2{
+        font-size: 1.4em;
+    }
+
+    .card a button{
+        padding: 8px; 
+        font-size: 1em;
+    }
+}
+
+/* ==========TABLET========== */
+
+@media (min-width:701px) and (max-width:1100px) {
+    body{
+        font-size: 16px !important;
+    }
+
+    .welcome h1{
+        font-size: 2.5em;
+    }
+
+    #discover{
+        font-size: 1.5em;
+    }
+
+    .blogs h2{
+        font-size: 1.8em;
+    }
+
+    h3{
+        font-size: 1.6em;
+    }
+
+    .solar-system,
+    .plants{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .card-photo figcaption{
+        font-size: 1em;
+    }
+
+    .title-p1,
+    .title-p2{
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,155 @@
+@media (max-width: 320px){
+    body{
+        font-size: 10px !important;
+        font-weight: 400;
+    }
+    main{
+        margin: 0.8em;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 3em;
+    }
+    .photo img{
+        border-radius: 60px 0;
+    }
+
+    .about-me p{
+        padding-left: 1em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h2::before{
+        left: 0.4em;
+        height: 20px;
+        width: 5px; 
+    }
+    
+    .social-icons a{
+        height: 25px;
+        width: 25px;
+        font-size: 1.5em;
+    }
+
+    .title h3{
+        font-size: 1.2em;
+    }
+
+    .input-group label{
+        font-size: 1em;
+    }
+    .form-contact{
+        margin:0;
+    }
+    .input-group{
+       max-width: 100px;
+    }
+    .button button{
+        font-size: 1em;
+        padding: 1em;
+    }
+    .ft p{
+        font-size: 0.6em;
+    }
+}
+
+/* ==========PHONE========== */
+
+@media (min-width:321px) and (max-width:700px) {
+
+    body{
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+    main{
+        margin: 1.5em;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 3em;
+    }
+
+    .about-me p{
+        padding-left: 1em;
+    }
+
+    .photo img{
+        border-radius: 100px 0;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h2::before{
+        left: 0.8em;
+        width: 8px;
+        height: 30px; 
+    }
+    
+    .social-icons a{
+        height: 30px;
+        width: 30px;
+        font-size: 1.5em;
+    }
+
+    .title h3{
+        font-size: 1.2em;
+    }
+
+    .input-group label{
+        font-size: 1.2em;
+    }
+
+    .form-contact{
+        margin:0;
+    }
+
+    .input-group{
+       max-width: 180px;
+    }
+
+    .ft p{
+        font-size: 0.6em;
+    }
+}
+
+/* ==========TABLET========== */
+
+@media (min-width:701px) and (max-width:1000px) {
+    body{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    main{
+        margin: 0 2em;
+        grid-gap: 1rem;
+    }
+
+    .about{
+        grid-template-columns: 1fr 0.6fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h2::before{
+        left: 0.8em; 
+    }
+    
+    .photo img{
+        width: 80%;
+        height: 80%;
+    }
+}
